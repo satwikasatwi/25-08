@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i,count=1,len;
+    char a[100];
+    printf("enter your sentence");
+    gets(a);
+    len=strlen(a);
+    for(i=1;i<=len;i++)
+    {
+        if(a[i]==' ')
+            count++;
+    }
+    printf("num of words=%d",count);
+    return 0;
+}
+OUTPUT:-
+enter your sentence i love india
+i love india
+num of words=3
